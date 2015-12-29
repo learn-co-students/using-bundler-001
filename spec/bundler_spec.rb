@@ -86,7 +86,7 @@ describe "Bundler" do
     before :each do
       @environment_text = File.read('config/environment.rb')
     end
-
+    require 'pry'
     # http://bundler.io/
     it "should require bundler/setup in the environment" do
       expect(@environment_text =~ /require .bundler\/setup./).not_to eq(nil)
